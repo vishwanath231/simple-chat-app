@@ -4,6 +4,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const dotenv = require('dotenv');
 const colors = require('colors');
+const path = require('path');
 
 
 const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./utils/user');
@@ -76,6 +77,15 @@ io.on("connection", (socket) => {
 })
 
 
+// server static 
+if (process.env.NODE_ENV === "production") {
+
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    })
+}
 
 const PORT = process.env.PORT || 5000;
 
