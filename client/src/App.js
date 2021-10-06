@@ -5,7 +5,7 @@ import Login from './components/Login/Login';
 import Chat from './components/Chat/Chat';
 import { io } from 'socket.io-client';
 
-const socket = io("http://localhost:5000")
+const socket = io("https://chat-application-one.herokuapp.com")
 
 const App = () => {
     return (
