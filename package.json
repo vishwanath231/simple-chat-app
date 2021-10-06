@@ -1,0 +1,25 @@
+{
+  "name": "chat-socket.io",
+  "version": "1.0.0",
+  "description": "CHAT SOCKET.IO",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VISHWANATH",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.13"
+  }
+}

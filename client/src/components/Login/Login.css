@@ -1,0 +1,77 @@
+
+
+.form__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0rem .8rem;
+}
+
+.form__box{
+    width: 100%;
+    padding: 10px;
+    margin: 2rem 0;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: rgb(17, 16, 16);
+}
+
+.form__div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form__div label{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: .4rem;
+}
+
+.form__div input{
+    width: 100%;
+    font-family: 'Montserrat',
+    sans-serif;
+    padding: .8rem;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form__div p {
+    color: crimson;
+    font-size: .8rem;
+    font-weight: 600;
+    margin: .2rem 0;
+}
+
+
+.joinBtn {
+    width: 100%;
+    background: rgb(32, 189, 27);
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding: .8rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+@media(min-width:600px){
+    .form__box{
+        width: 350px;
+    }
+}
